@@ -1,10 +1,9 @@
-/* RESPONSIVIDADE */
+/* ================================= RESPONSIVIDADE ================================= */
 
 
-/* TELAS */
+/* ================================= TELAS ================================= */
 .Container {
     display: flex;
-    background-color: #133e7c;
     flex-direction: column;
 
     align-items: center;
@@ -39,13 +38,16 @@ h3 {
     margin-top: 70px;
     margin-bottom: 50px;
     font-size: 3rem;
+    color: 	#8c1eff;
 }
 
 p {
     color: cornsilk;
 }
 
-/*REPOSITORIOS */
+
+
+/* ================================= REPOSITORIOS ================================= */
 .Repositorios {
     display: grid;
 
@@ -61,7 +63,7 @@ p {
     align-items: center;
 
     height: 300px;
-    background-color: 	#711c91;
+    background-color:	#cb0c59;
 }
 .Repositorios .ItemRepositorio p {
     padding-top: 15px;
@@ -76,15 +78,12 @@ p {
     font-size: 30px;
 }
 
-/* JOGOS */
+/* ================================= JOGOS ===================================== */
 .Jogos {
     display: grid;
     width: 75%;
     flex-direction: column;
-    background-image: url("../../assets/gameover.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+
 
 }
 .Jogos .CardJogo {
@@ -121,7 +120,7 @@ p {
 } 
 
 
-/* OBJETOS */
+/* ================================= OBJETOS ================================= */
 .MinhaImagem {
     width: 300px;
     height: 300px;
@@ -130,3 +129,4 @@ p {
     border-radius: 200px;
     border-color: #0abdc6;
 }
+

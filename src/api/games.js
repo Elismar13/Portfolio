@@ -8,7 +8,7 @@ import React from 'react';
 const games = [
     {
         nome:"Phantasy Star",
-        descricao:"Um RPG de 1987 que marcou minha infância. Um dos primeiros jogos que joguei e a porta de entrada para o mundo dos games.",
+        descricao:"Um RPG de 1987 que marcou minha infância. Um dos primeiros jogos que joguei e minha porta de entrada para o mundo dos games.",
         foto:Phantasy
     },
     {

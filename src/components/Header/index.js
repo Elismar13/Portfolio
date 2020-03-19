@@ -2,15 +2,28 @@ import React from 'react';
 
 import './styles.css';
 
-const Header = () => (
-    <header>
-        <div id="links">
-            <a href="/">Home</a>
-            <a href="/about">Sobre</a>
-            <a href="/repositories">Repositórios</a>
-        </div>
-    </header>
-);
+import links from './icons';
+
+const Header = () => {
+    function Redireciona(url) {
+        window.open(url);
+    }
+
+    return (
+        <header>
+            <div id="links">
+                { links.map( (value, id) => {
+                    return(
+                        <img className="Icons"
+                            src={value.logo} 
+                            onClick={() => { Redireciona(value.social) }} 
+                        />
+                    )
+                } )}
+            </div>
+        </header>
+    )
+};
 
 
 export default Header;

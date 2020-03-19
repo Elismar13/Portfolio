@@ -1,4 +1,4 @@
-import React, {useState, useEffect, Image} from 'react';
+import React, {useState, useEffect} from 'react';
 import './styles.css';
 
 import api from '../../api/githubProfile';
@@ -27,7 +27,7 @@ const Home = () => {
      }, [] )
 
      function Redireciona(url) {
-          window.location.replace(url);
+          window.open(url);
      }
 
     return (
@@ -44,6 +44,8 @@ const Home = () => {
                             Atualmente sigo minha longa jornada no Instituto Federal da Paraíba - Campus Campina Grande, 
                             no curso superior de Engenharia de Computação (2019.1).</p>
                     </section>
+                <h3>Tecnologias</h3>
+
 
                 <h3>Minhas contribuições</h3>
                     <section className="Repositorios">
