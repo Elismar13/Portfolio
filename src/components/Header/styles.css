@@ -1,3 +1,5 @@
-header {
-    
+header links {
+    display: flex;
+    height: 10%;
+    color: cornsilk;
 }

@@ -4,7 +4,11 @@ import Routes from './routes';
 
 import Header from './components/Header/index';
 
-export default App = () => (
-    <Routes />
-    <Header />
+const App = () => (
+    <>
+        <Header />
+        <Routes />
+    </>
 );
+
+export default App;
