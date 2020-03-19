@@ -24,6 +24,11 @@ const Home = () => {
 
         console.log(user)
      }, [] )
+
+     function Redireciona(url) {
+          window.location.replace(url);
+     }
+
     return (
             <div className="Container">
                 <img src={user.avatar_url} className="MinhaImagem" />
@@ -39,17 +44,22 @@ const Home = () => {
                             no curso superior de Engenharia de Computação (2019.1).</p>
                     </section>
 
-                <h3>Minhas contribuições:</h3>
+                <h3>Minhas contribuições</h3>
                     <section className="Repositorios">
                         { repositorios.map((value, id) => {
                             return(
-                                <div className="ItemRepositorio" key={id}>
+                                <div className="ItemRepositorio" key={id} onClick={(props) => {Redireciona(value.html_url)}} >
                                     <p className="NomeRepositorio">{value.name}</p>
                                     <p className="DescricaoRepositorio">{value.description === null ? "Sem descricão" : value.description}</p>
                                     <p className="TecnologiasRepositorios">{value.language === null ? "Multiplas" : value.language}</p>
                                 </div>
                             )
                         })}
+                    </section>
+
+                <h3>Meus jogos favoritos</h3>
+                    <section className="Jogos">
+                        {  }
                     </section>
             </div>
     )

@@ -18,7 +18,7 @@ header {
     height: 5rem;
 }
 
-header .links {
+header #links {
     display: flex;
     flex-direction: row;
     justify-content: center;
