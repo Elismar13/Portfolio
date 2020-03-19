@@ -2,6 +2,7 @@ import React, {useState, useEffect, Image} from 'react';
 import './styles.css';
 
 import api from '../../api/githubProfile';
+import jogos from '../../api/games';
 
 const Home = () => {
     const [user, setUser] = useState({});
@@ -50,7 +51,7 @@ const Home = () => {
                             return(
                                 <div className="ItemRepositorio" key={id} onClick={(props) => {Redireciona(value.html_url)}} >
                                     <p className="NomeRepositorio">{value.name}</p>
-                                    <p className="DescricaoRepositorio">{value.description === null ? "Sem descricão" : value.description}</p>
+                                    <p className="DescricaoRepositorio">{value.description === null ? "Estou sem descição :(" : value.description}</p>
                                     <p className="TecnologiasRepositorios">{value.language === null ? "Multiplas" : value.language}</p>
                                 </div>
                             )
@@ -59,7 +60,17 @@ const Home = () => {
 
                 <h3>Meus jogos favoritos</h3>
                     <section className="Jogos">
-                        {  }
+                        { jogos.map((item, id) => {
+                            return(
+                                <div className="CardJogo"key={id}>
+                                    <div className="Texto">
+                                        <p className="TituloJogo">{item.nome}</p>< br/>
+                                        <p className="Descricao">{item.descricao}</p>
+                                    </div>
+                                    <img src={item.foto} />
+                                </div>
+                            )
+                        })}
                     </section>
             </div>
     )
