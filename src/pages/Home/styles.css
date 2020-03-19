@@ -1,4 +1,3 @@
-/* ================================= RESPONSIVIDADE ================================= */
 
 
 /* ================================= TELAS ================================= */
@@ -141,3 +140,17 @@ i {
     border-color: #0abdc6;
 }
 
+/* ================================= RESPONSIVIDADE ================================= */
+@media (max-width: 1000px) {
+
+    p, spam, h1, h3 {
+        font-size: 80%;
+    }
+    .Repositorios {
+        grid-template-columns: 1fr 1fr;
+    }
+    .Jogos .CardJogo img {
+        width: 250px;
+        height: 300;
+    }
+}
