@@ -1,7 +1,26 @@
-* {
-    box-shadow: none;
-    padding: 0%;
-    margin: 0%;
+.Container {
+    display: flex;
+    background-color: #133e7c;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.MeuNome {
+    margin-top: 5%;
+    font-size: 7rem;
+    color: #133e7c;
+}
+
+.Descricao {
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+    font-size: 1rem;
+}
+
+.Descricao p {
+    color: aliceblue;
 }
 
 body {
