@@ -5,19 +5,17 @@ import './styles.css';
 import links from './icons';
 
 const Header = () => {
-    function Redireciona(url) {
-        window.open(url);
-    }
 
     return (
         <header>
             <div id="links">
                 { links.map( (value, id) => {
                     return(
-                        <img className="Icons"
-                            src={value.logo} 
-                            onClick={() => { Redireciona(value.social) }} 
-                        />
+                        <a href={value.social}>
+                            <img className="Icons"
+                                src={value.logo} 
+                            />
+                        </a>
                     )
                 } )}
             </div>

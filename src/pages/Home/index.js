@@ -44,7 +44,25 @@ const Home = () => {
                             Atualmente sigo minha longa jornada no Instituto Federal da Paraíba - Campus Campina Grande, 
                             no curso superior de Engenharia de Computação (2019.1).</p>
                     </section>
-                <h3>Tecnologias</h3>
+
+
+                <h3>Tecnologias que já trabalhei</h3>
+                    <div className="Techs">
+                        <i class="devicon-cplusplus-plain"></i>
+                        <i class="devicon-java-plain"></i>
+                        <i class="devicon-javascript-plain"></i>
+                        <i class="devicon-python-plain"></i>
+                        <i class="devicon-ruby-plain"></i>
+                    </div>
+
+                <h3>Tecnologias que estou estudando</h3>
+                    <div className="Techs">
+                        <i class="devicon-nodejs-plain"></i>
+                        <i class="devicon-express-original"></i>
+                        <i class="devicon-html5-plain"></i>
+                        <i class="devicon-css3-plain"></i>
+                        <i class="devicon-react-original"></i>
+                    </div>
 
 
                 <h3>Minhas contribuições</h3>
