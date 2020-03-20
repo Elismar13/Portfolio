@@ -11,12 +11,12 @@ const Home = () => {
     useEffect( () => {
         async function getUser() {
             const UserRequest = await api.get("/Elismar13");
-            setUser(UserRequest.data); //login, html_url, name, bio, avatar_url
+            setUser( UserRequest.data ); //login, html_url, name, bio, avatar_url
         }
 
         async function getRepositorios() {
             const RepoRequest = await api.get("/Elismar13/repos?&sort=update");
-            setRepo(RepoRequest.data);
+            setRepo( RepoRequest.data );
         }
         
         getUser();
