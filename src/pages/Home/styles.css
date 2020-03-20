@@ -9,12 +9,26 @@
     margin-top: 50px;
 }
 
+.Imagem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .Descricao {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 60%;
+    width: 75%;
     font-size: 20px;
+}
+
+.Tecnologias {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
 }
 
 /* TEXTOS */
@@ -27,20 +41,24 @@
 
 .Descricao p {
     justify-content: center;
+    text-size-adjust: initial;
     margin-top: 10px;
     color: aliceblue;
     text-align: center;
+    font-size: 2rem;
 }
 
 h3 {
     margin-top: 100px;
     margin-bottom: 50px;
-    font-size: 3rem;
+    font-size: 4rem;
+    font-weight: bold;
     color: 	#8c1eff;
+    text-align: center;
 }
 
-p {
-    color: cornsilk;
+p{
+    color: aliceblue;
 }
 
 /* ================================= TECNOLOGIAS ================================= */
@@ -49,7 +67,7 @@ p {
     flex-direction: row;
 }
 i {
-    font-size: 60px;
+    font-size: 3rem;
     padding-left: 50px;
 }
 
@@ -57,7 +75,7 @@ i {
 .Repositorios {
     display: grid;
 
-    width: 75%;
+    width: 90vw;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 30px;
     row-gap: 15px;
@@ -80,28 +98,30 @@ i {
     padding-right: 5px;
     text-align: center;
 }
-.Repositorios .ItemRepositorio p .Descricao {
-    font-size: 15px;
+.Repositorios .ItemRepositorio .DescricaoRepositorio {
+    font-size: 1.2rem;
 }
 .NomeRepositorio {
-    font-size: 30px;
+    font-size: 1.6rem;
+    font-weight: bold;
 }
 
 /* ================================= JOGOS ===================================== */
 .Jogos {
-    display: grid;
-    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 
-
+    background-color: #0abdc6;
 }
 .Jogos .CardJogo {
     display: grid;
-    height: 300px;
-
+    height: 280px;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    border-bottom: 30px;
+    border-bottom: 20px;
+
 }
 .Jogos .CardJogo .Texto {
     display: flex;
@@ -112,17 +132,17 @@ i {
 }
 
 .Jogos .CardJogo .TituloJogo{
-    font-size: 40px;
+    font-size: 1rem;
     text-align: center;
 }
 .Jogos .CardJogo .Descricao {
     float: left;
     text-align: center;
-
+    font-size: 0.8rem;
 }
 .Jogos .CardJogo img {
-    width: 400px;
-    height: 250px;
+    width: 40vw;
+    height: 40vh;
     float: right;
 
     border-radius: 20px;
@@ -141,29 +161,81 @@ i {
 
 /* ================================= RESPONSIVIDADE ================================= */
 
-@media (max-width:900px) {
-
+@media  (min-width:1601px) {
     .Repositorios {
-        width:95%;
-        grid-template-columns: 1fr 1fr;
-    }
-    .Descricao {
-        width: 95%;
-    }
-
-    h3 {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    .Jogos .CardJogo .TituloJogo{
-        font-size: 30px;
-    }
-    .Jogos .CardJogo .Descricao {
-        font-size: 15px;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     .Jogos .CardJogo img {
-        width: 300px;
-        height: 200px;
+        width: 30vw;
+        height: 40vh;
     }
+    .Repositorios .ItemRepositorio .DescricaoRepositorio {
+        font-size: 1.5rem;
+    }
+    .NomeRepositorio {
+        font-size: 1.8rem;
+    }
+
+    .Jogos .CardJogo .Descricao {
+        font-size: 1.7rem;
+    }
+    .Jogos .CardJogo .TituloJogo {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1600px) {
+    .Repositorios {
+        grid-template-columns: 1fr 1fr;
+    }
+    .Repositorios .ItemRepositorio .DescricaoRepositorio {
+        font-size: 1.3rem;
+    }
+    .NomeRepositorio {
+        font-size: 1.6rem;
+    }
+
+    .Jogos .CardJogo .Descricao {
+        font-size: 1.3rem;
+    }
+    .Jogos .CardJogo .TituloJogo {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width:900px) {
+    .Repositorios {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    html {
+        font-size: 20px;
+    }
+    .Descricao {
+        width: 90%;
+    }
+    .Descricao p {
+        font-size: 2rem;
+    }
+    i {
+        font-size: 3.9rem;
+        padding-left: 15px;
+    }
+
+    .Jogos .CardJogo .Descricao {
+        font-size: 1.5rem;
+    }
+    .Jogos .CardJogo .TituloJogo {
+        font-size: 2rem;
+    }
+
+    .Jogos .CardJogo img {
+        width: 40vw;
+        height: 30vh;
+        float: right;
+    
+        border-radius: 20px;
+    } 
 }
