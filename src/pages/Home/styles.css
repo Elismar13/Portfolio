@@ -141,7 +141,7 @@ i {
 
 /* ================================= RESPONSIVIDADE ================================= */
 
-@media (max-width:768px) {
+@media (max-width:900px) {
 
     .Repositorios {
         width:95%;
@@ -153,5 +153,17 @@ i {
 
     h3 {
         font-size: 2rem;
+        text-align: center;
+    }
+
+    .Jogos .CardJogo .TituloJogo{
+        font-size: 30px;
+    }
+    .Jogos .CardJogo .Descricao {
+        font-size: 15px;
+    }
+    .Jogos .CardJogo img {
+        width: 300px;
+        height: 200px;
     }
 }
