@@ -1,5 +1,3 @@
-/* ================================= RESPONSIVIDADE ================================= */
-
 
 /* ================================= TELAS ================================= */
 .Container {
@@ -141,3 +139,19 @@ i {
     border-color: #0abdc6;
 }
 
+/* ================================= RESPONSIVIDADE ================================= */
+
+@media (max-width:768px) {
+
+    .Repositorios {
+        width:95%;
+        grid-template-columns: 1fr 1fr;
+    }
+    .Descricao {
+        width: 95%;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+}

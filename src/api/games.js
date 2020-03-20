@@ -1,4 +1,5 @@
 import Phantasy from '../assets/phantasy.png';
+import Sonic from '../assets/sonic.jpg'
 import MGS from '../assets/mgsv.jpg';
 import LiS from '../assets/LiS.jpg'
 
@@ -10,6 +11,11 @@ const games = [
         nome:"Phantasy Star",
         descricao:"Um RPG de 1987 que marcou minha infância. Um dos primeiros jogos que joguei e minha porta de entrada para o mundo dos games.",
         foto:Phantasy
+    },
+    {
+        nome:"Sonic the Hedgehog",
+        descricao:"Meu primeiro jogo de plataforma. Foi uma experiência muito divertida, fechei este jogo várias vezes e nunca enjoei.",
+        foto:Sonic
     },
     {
         nome:"Metal Gear Solid",
