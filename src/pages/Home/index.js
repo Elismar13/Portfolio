@@ -31,13 +31,13 @@ const Home = () => {
      }
 
     return (
-            <div className="Container container-fluid">
-                <div className="row-12 Imagem">
+            <div className="Container">
+                <div className="Imagem">
                     <img src={user.avatar_url} className="MinhaImagem" />
                     <h1 className="MeuNome">{user.login}</h1>
                 </div>
                 
-                <div className="row-12 Descricao">
+                <div className="Descricao">
                     <p>Olá! Me chamo <strong>Elismar Silva Pereira</strong>, tenho 18 anos e sou de uma pequena cidade 
                         localizada no agreste paraibano.</p>
                     <p>Desde pequeno sempre gostei de assuntos que envolviam tecnologia, mais especificadamente programação e eletrônica, 
@@ -47,7 +47,7 @@ const Home = () => {
                         no curso superior de Engenharia de Computação (2019.1).</p>
                 </div>
 
-                <div className="row-12 Tecnologias">
+                <div className="Tecnologias">
                     <h3>Tecnologias que já trabalhei</h3>
                         <div className="Techs">
                             <i class="devicon-cplusplus-plain"></i>
@@ -57,7 +57,7 @@ const Home = () => {
                             <i class="devicon-ruby-plain"></i>
                         </div>
                 </div>
-                <div className="row-12 Tecnologias">
+                <div className="Tecnologias">
                     <h3>Tecnologias que estou estudando</h3>
                         <div className="Techs">
                             <i class="devicon-nodejs-plain"></i>
