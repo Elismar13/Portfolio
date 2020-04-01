@@ -1,0 +1,21 @@
+
+div .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div .description img {
+    width: 300px;
+    height: 300px;
+    border: solid 10px;
+    border-color: #cb0c59;
+    border-radius: 150px;
+    margin-bottom: 40px;
+}
+
+div .description p {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 90%;
+}

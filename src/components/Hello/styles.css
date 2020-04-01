@@ -1,0 +1,32 @@
+div .header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 3rem;
+    text-align: center;
+}
+
+div .header strong {
+    background-color: yellow;
+}
+
+div .header .links {
+    margin-top: 9rem;
+}
+
+div .header a {
+    text-decoration: none;
+    color: aliceblue;
+    margin-right: 3vw;
+}
+
+div .header svg:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    color: yellow;
+}
+

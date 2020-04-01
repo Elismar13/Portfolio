@@ -1,9 +1,12 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
+
+
 import './styles.css';
 
 import api from '../../api/githubProfile';
 import jogos from '../../api/games';
 
+import Hello from '../../components/Hello';
 const Home = () => {
     const [user, setUser] = useState({});
     const [repositorios, setRepo] = useState([]);
@@ -31,13 +34,12 @@ const Home = () => {
      }
 
     return (
-            <div className="Container">
-                <div className="Imagem">
-                    <img src={user.avatar_url} className="MinhaImagem" />
-                    <h1 className="MeuNome">{user.login}</h1>
-                </div>
+            <div className="container">
+                <Hello />
                 
-                <div className="Descricao">
+                <div className="description">
+                    <img src={user.avatar_url} className="MinhaImagem" />
+
                     <p>Olá! Me chamo <strong>Elismar Silva Pereira</strong>, tenho 18 anos e sou de uma pequena cidade 
                         localizada no agreste paraibano.</p>
                     <p>Desde pequeno sempre gostei de assuntos que envolviam tecnologia, mais especificadamente programação e eletrônica, 
