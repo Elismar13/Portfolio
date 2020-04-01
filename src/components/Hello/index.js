@@ -12,7 +12,7 @@ export default function Hello() {
     return (
         <div className="header">
             <h1>Olá, Me chamo <strong>Elismar</strong>!</h1>
-            <spam>Estudante de engenharia de computação e fascinado por projetos open-source</spam>
+            <p>Estudante de engenharia de computação e fascinado por projetos open-source.</p>
             <div className="links">
                 <a href="https://github.com/Elismar13"> 
                     <FaGithub size={60} title="GitHub"/> </a>

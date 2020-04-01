@@ -26,7 +26,7 @@ const Home = () => {
         getRepositorios();
 
 
-        console.log(user)
+        
      }, [] )
 
      function Redireciona(url) {
@@ -38,37 +38,22 @@ const Home = () => {
                 <Hello />
                 
                 <div className="description">
-                    <img src={user.avatar_url} className="MinhaImagem" />
-
-                    <p>Olá! Me chamo <strong>Elismar Silva Pereira</strong>, tenho 18 anos e sou de uma pequena cidade 
-                        localizada no agreste paraibano.</p>
-                    <p>Desde pequeno sempre gostei de assuntos que envolviam tecnologia, mais especificadamente programação e eletrônica, 
-                        foi daí que surgiu minha paixão por estas magníficas áreas.</p>
-                    <p>Posteriormente conclui um curso técnico na área de Telecomunicações, onde tive a oportunidade de entrar de vez neste mundo da tecnologia. 
-                        Atualmente sigo minha longa jornada no Instituto Federal da Paraíba - Campus Campina Grande, 
-                        no curso superior de Engenharia de Computação (2019.1).</p>
+                    <div className="description-image">
+                        <img src={user.avatar_url} className="MinhaImagem" />
+                        <p> {user.login} </p>
+                    </div>
+                    <div className="description-text">
+                        <p>Olá! Me chamo <strong>Elismar Silva Pereira</strong>, tenho 18 anos e sou de uma pequena cidade 
+                            localizada no agreste paraibano.</p>
+                        <p>Desde pequeno sempre gostei de assuntos que envolviam tecnologia, mais especificadamente programação e eletrônica, 
+                            foi daí que surgiu minha paixão por estas magníficas áreas.</p>
+                        <p>Posteriormente conclui um curso técnico na área de Telecomunicações, onde tive a oportunidade de entrar de vez neste mundo da tecnologia. 
+                            Atualmente sigo minha longa jornada no Instituto Federal da Paraíba - Campus Campina Grande, 
+                            no curso superior de Engenharia de Computação (2019.1).</p>
+                    </div>
                 </div>
 
-                <div className="Tecnologias">
-                    <h3>Tecnologias que já trabalhei</h3>
-                        <div className="Techs">
-                            <i class="devicon-cplusplus-plain"></i>
-                            <i class="devicon-java-plain"></i>
-                            <i class="devicon-javascript-plain"></i>
-                            <i class="devicon-python-plain"></i>
-                            <i class="devicon-ruby-plain"></i>
-                        </div>
-                </div>
-                <div className="Tecnologias">
-                    <h3>Tecnologias que estou estudando</h3>
-                        <div className="Techs">
-                            <i class="devicon-nodejs-plain"></i>
-                            <i class="devicon-express-original"></i>
-                            <i class="devicon-html5-plain"></i>
-                            <i class="devicon-css3-plain"></i>
-                            <i class="devicon-react-original"></i>
-                        </div>
-                </div>
+
 
 
 
@@ -87,6 +72,7 @@ const Home = () => {
 
                 <h3>Meus jogos favoritos</h3>
                     <section className="Jogos">
+                        {console.log(user)}
                         { jogos.map((item, id) => {
                             return(
                                 <div className="CardJogo"key={id}>

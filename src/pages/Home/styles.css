@@ -1,21 +1,36 @@
 
 div .description {
     display: flex;
-    flex-direction: column;
+    height: 60vh;
+    background-color: aqua;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-around;
 }
 
-div .description img {
-    width: 300px;
-    height: 300px;
+div .description .description-image {
+    display: flex;
+    flex-direction: column;
+}
+
+div .description .description-image img {
+    width: 350px;
+    height: 350px;
     border: solid 10px;
     border-color: #cb0c59;
-    border-radius: 150px;
-    margin-bottom: 40px;
+    border-radius: 175px;
 }
 
-div .description p {
-    font-size: 1.5rem;
+div .description .description-image p {
+    margin-top: 3vh;
+    font-size: 2rem;
     text-align: center;
-    width: 90%;
 }
+
+
+div .description .description-text {
+    font-size: 1.5rem;
+    text-align: justify;
+    width: 50vw;
+}
+

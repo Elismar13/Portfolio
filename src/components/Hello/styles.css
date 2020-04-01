@@ -14,8 +14,14 @@ div .header strong {
     background-color: yellow;
 }
 
+div .header p {
+    margin-top: 3rem;
+    font-size: 2rem;
+    max-width: 1100px;
+}
+
 div .header .links {
-    margin-top: 9rem;
+    margin-top: 7rem;
 }
 
 div .header a {
@@ -29,4 +35,6 @@ div .header svg:hover {
     opacity: 0.8;
     color: yellow;
 }
+
+
 
