@@ -14,7 +14,11 @@ div .techs {
     width: 40%;
     justify-content: space-between;
 }
+div .techs h3:first {
+    margin-top: 5vh;
+}
 
 div .techs i {
-    font-size: 5rem;
+    font-size: 4rem;
 }
+

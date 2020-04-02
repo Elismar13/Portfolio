@@ -14,11 +14,11 @@ div .description .description-image {
 }
 
 div .description .description-image img {
-    width: 350px;
-    height: 350px;
+    width: 40vh;
+    height: 40vh;
     border: solid 10px;
     border-color: #cb0c59;
-    border-radius: 175px;
+    border-radius: 25vh;
 }
 
 div .description .description-image p {
@@ -34,3 +34,39 @@ div .description .description-text {
     width: 50vw;
 }
 
+
+div .repositorios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div .repositorios h3 {
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+div .repositorios section {
+    display: grid;
+    width: 95%;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2.5vw;
+    row-gap: 2.5vw;
+}
+
+div .repositorios section .repositorios-item {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 25px;
+    background-color: aquamarine;
+}
+
+div .repositorios section .repositorios-item:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}

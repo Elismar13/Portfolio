@@ -2,13 +2,14 @@ import React from 'react';
 
 import Routes from './routes';
 
-import Header from './components/Header/index';
+import Home from './pages/Home';
 
 import './global.css';
 
 const App = () => (
     <>
         <Routes />
+        <Home />
     </>
 );
 
