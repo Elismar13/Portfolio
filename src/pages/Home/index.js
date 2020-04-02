@@ -59,22 +59,23 @@ const Home = () => {
                 <Repositories repositorios={repositorios} />
 
 
-
-                <h3>Meus jogos favoritos</h3>
-                    <section className="Jogos">
-                        {console.log(user)}
-                        { jogos.map((item, id) => {
-                            return(
-                                <div className="CardJogo"key={id}>
-                                    <div className="Texto">
-                                        <p className="TituloJogo">{item.nome}</p>< br/>
-                                        <p className="Descricao">{item.descricao}</p>
+                <div className="games">
+                    <h3>Meus jogos favoritos</h3>
+                        <section>
+                            { jogos.map((item, id) => {
+                                return(
+                                    <div className="games-box"key={id}>
+                                        <div className="game-text">
+                                            <p className="game-title">{item.nome}</p>< br/>
+                                            <p className="game-description">{item.descricao}</p>
+                                        </div>
+                                        <img src={item.foto} />
                                     </div>
-                                    <img src={item.foto} />
-                                </div>
-                            )
-                        })}
-                    </section>
+                                )
+                            })}
+                        </section>
+                </div>
+
             </div>
     )
 };

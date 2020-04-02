@@ -33,3 +33,17 @@ div .description .description-text {
     text-align: justify;
     width: 50vw;
 }
+
+div .games {
+    display: flex;
+    flex-direction: column;
+}
+
+div .games section div.games-box {
+    display: flex;
+}
+
+div .games section img {
+    width: 200px;
+    height: 200px;
+}
