@@ -1,0 +1,49 @@
+
+
+div .repositorios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div .repositorios h3 {
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+div .repositorios section {
+    display: grid;
+    width: 95%;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2.5vw;
+    row-gap: 2.5vw;
+}
+
+div .repositorios section .repositorios-item {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 25px;
+    padding: 0 20px 0 20px;
+    background-color: aquamarine;
+}
+
+div .repositorios section .repositorios-item:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+div .repositorios section .repositorios-item p.repositorios-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 3vh;
+}
+
+div .repositorios section .repositorios-item p.repositorios-description {  
+    font-size: 1rem;
+    margin-bottom: 3vh;
+}
