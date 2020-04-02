@@ -8,6 +8,7 @@ import jogos from '../../api/games';
 
 import Hello from '../../components/Hello';
 import Techs from '../../components/Techs';
+import Repositories from '../../components/Repositories';
 
 
 const Home = () => {
@@ -32,7 +33,6 @@ const Home = () => {
         
      }, [] )
 
-     const Redireciona = (url) => window.open(url);
 
     return (
             <div className="container">
@@ -56,7 +56,7 @@ const Home = () => {
 
                 <Techs />
 
-
+                <Repositories repositorios={repositorios} />
 
 
 

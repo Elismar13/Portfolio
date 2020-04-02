@@ -3,6 +3,9 @@ import React from 'react';
 import './styles.css';
 
 export default function Repositories( {repositorios} ) {
+    const Redireciona = (url) => window.open(url);
+
+
     return (
         <div className="repositorios">
             <h3>Minhas contribuições</h3>
@@ -18,5 +21,9 @@ export default function Repositories( {repositorios} ) {
                     })}
                 </section>
         </div>
+        // <div>
+        //     {console.log(repositorios)}
+        // </div>
+        
     );
 }
