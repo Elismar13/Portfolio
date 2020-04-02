@@ -7,6 +7,9 @@ import api from '../../api/githubProfile';
 import jogos from '../../api/games';
 
 import Hello from '../../components/Hello';
+import Techs from '../../components/Techs';
+
+
 const Home = () => {
     const [user, setUser] = useState({});
     const [repositorios, setRepo] = useState([]);
@@ -53,7 +56,7 @@ const Home = () => {
                     </div>
                 </div>
 
-
+                <Techs />
 
 
 
