@@ -65,9 +65,9 @@ const Home = () => {
                             { jogos.map((item, id) => {
                                 return(
                                     <div className="games-box"key={id}>
-                                        <div className="game-text">
-                                            <p className="game-title">{item.nome}</p>< br/>
-                                            <p className="game-description">{item.descricao}</p>
+                                        <div className="games-text">
+                                            <p className="games-title">{item.nome}</p>< br/>
+                                            <p className="games-description">{item.descricao}</p>
                                         </div>
                                         <img src={item.foto} />
                                     </div>
