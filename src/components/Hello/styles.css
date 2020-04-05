@@ -1,6 +1,6 @@
 div .header {
     width: 100vw;
-    height: 95%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,6 +35,3 @@ div .header svg:hover {
     opacity: 0.8;
     color: yellow;
 }
-
-
-
