@@ -4,7 +4,7 @@ import jogos from '../../api/games';
 
 import './styles.css';
 
-export default function Games({ jogos }) {
+export default function Games() {
     return (
         <div className="games">
             <h3>Meus jogos favoritos</h3>

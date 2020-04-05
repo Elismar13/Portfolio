@@ -8,6 +8,7 @@ import api from '../../api/githubProfile';
 import Hello from '../../components/Hello';
 import Techs from '../../components/Techs';
 import Repositories from '../../components/Repositories';
+import Games from '../../components/Games';
 
 
 const Home = () => {
@@ -57,7 +58,7 @@ const Home = () => {
 
                 <Repositories repositorios={repositorios} />
 
-
+                <Games />
 
 
             </div>
