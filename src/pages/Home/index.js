@@ -5,6 +5,8 @@ import './styles.css';
 
 import api from '../../api/githubProfile';
 
+import projects from '../../api/projects'
+
 import Hello from '../../components/Hello';
 import Description from '../../components/Description';
 import Techs from '../../components/Techs';
@@ -46,10 +48,9 @@ const Home = () => {
                         <section>
                             { projects.map((value, id) => {
                                 return(
-                                    <div className="projects-item" key={id} onClick={() => {Redireciona(value.html_url)}} >
-                                        <p className="projects-name">{value.name}</p>
+                                    <div className="projects-info" key={id}>
+                                        <img src={value.logo}/>
                                         <p className="projects-description">{value.description === null ? "Estou sem descição :(" : value.description}</p>
-                                        <p className="projects-techs">{value.language === null ? "Multiplas" : value.language}</p>
                                     </div>
                                 )
                             })}

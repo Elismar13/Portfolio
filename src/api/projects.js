@@ -1,19 +1,23 @@
- const projects = [
+import Home from '../assets/Projects/inHome_logo.png';
+import Hero from '../assets/Projects/bethehero.svg';
+import Radar from '../assets/Projects/devradar.svg';
+
+ 
+const projects = [
     {
         title: "inHome",
-        description: "inHome - Projeto em desenvolvimento ao longo da minha graduação. Consiste em um sistema capaz de" +
-                     "controlar o uso de condicionadores de ar presentes em um ambiente e economizar energia.",
-        logo: "https://github.com/Elismar13/inHome-Documentation/blob/master/assets/inHome_logo.png",
+        description: "inHome - Projeto em desenvolvimento ao longo da minha graduação. Você no controle",
+        logo: Home,
     },
     {
         title: "Be the Hero",
         description: "Be the Hero - Uma plataforma para conectar pessoas e ONGs com problemas a serem resolvidos",
-        logo: "https://github.com/Elismar13/Semana-OmniStack-11/blob/master/.github/logo.svg",
+        logo: Hero,
     },
     {
         title: "DevRadar",
         description: "DevRadar - Encontre o desenvolvedor mais próximo de você!",
-        logo: "https://github.com/Elismar13/Semana-OmniStack-11/blob/master/.github/logo.svg",
+        logo: Radar,
     },
 ];
 

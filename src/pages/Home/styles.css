@@ -1,36 +1,36 @@
-
-div .description {
-    display: flex;
+.projects {
     height: 60vh;
-    background-color: aqua;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-
-div .description .description-image {
     display: flex;
     flex-direction: column;
 }
 
-div .description .description-image img {
-    width: 40vh;
-    height: 40vh;
-    border: solid 10px;
-    border-color: #cb0c59;
-    border-radius: 25vh;
+.projects h3 {
+    margin-top: 10vh;
+    margin-bottom: 5vh;
 }
 
-div .description .description-image p {
-    margin-top: 3vh;
-    font-size: 2rem;
+.projects section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 45px;
+    column-gap: 30px;
+}
+
+.projects section .projects-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
-
-div .description .description-text {
-    font-size: 1.5rem;
-    text-align: justify;
-    width: 50vw;
+.projects section .projects-info img {
+    width: 7rem;
+    height: 7rem;
 }
+
+.projects section .projects-info p {
+    font-size: 1.2rem;
+}
+
 
