@@ -41,6 +41,21 @@ const Home = () => {
                 
                 <Description user={user} />
 
+                <div className="projects">
+                    <h3>Minhas contribuições</h3>
+                        <section>
+                            { projects.map((value, id) => {
+                                return(
+                                    <div className="projects-item" key={id} onClick={() => {Redireciona(value.html_url)}} >
+                                        <p className="projects-name">{value.name}</p>
+                                        <p className="projects-description">{value.description === null ? "Estou sem descição :(" : value.description}</p>
+                                        <p className="projects-techs">{value.language === null ? "Multiplas" : value.language}</p>
+                                    </div>
+                                )
+                            })}
+                        </section>
+                </div>
+
                 <Techs />
 
                 <Repositories repositorios={repositorios} />

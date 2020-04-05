@@ -2,9 +2,9 @@ import React from 'react';
 
 import './styles.css';
 
+// eslint-disable-next-line react/prop-types
 export default function Repositories( {repositorios} ) {
     const Redireciona = (url) => window.open(url);
-
 
     return (
         <div className="repositorios">
@@ -12,10 +12,10 @@ export default function Repositories( {repositorios} ) {
                 <section>
                     { repositorios.map((value, id) => {
                         return(
-                            <div className="repositorios-item" key={id} onClick={(props) => {Redireciona(value.html_url)}} >
+                            <div className="repositorios-item" key={id} onClick={() => {Redireciona(value.html_url)}} >
                                 <p className="repositorios-name">{value.name}</p>
                                 <p className="repositorios-description">{value.description === null ? "Estou sem descição :(" : value.description}</p>
-                                <p className="repositirios-techs">{value.language === null ? "Multiplas" : value.language}</p>
+                                <p className="repositorios-techs">{value.language === null ? "Multiplas" : value.language}</p>
                             </div>
                         )
                     })}

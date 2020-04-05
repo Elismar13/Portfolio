@@ -4,8 +4,6 @@ import MGS from '../assets/mgsv.jpg';
 import LiS from '../assets/LiS.jpg'
 
 
-import React from 'react';
-
 const games = [
     {
         nome:"Phantasy Star",
