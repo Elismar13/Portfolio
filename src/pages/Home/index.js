@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 import './styles.css';
 
 import api from '../../api/githubProfile';
-import jogos from '../../api/games';
 
 import Hello from '../../components/Hello';
 import Techs from '../../components/Techs';
@@ -59,22 +58,7 @@ const Home = () => {
                 <Repositories repositorios={repositorios} />
 
 
-                <div className="games">
-                    <h3>Meus jogos favoritos</h3>
-                        <section>
-                            { jogos.map((item, id) => {
-                                return(
-                                    <div className="games-box"key={id}>
-                                        <div className="games-text">
-                                            <p className="games-title">{item.nome}</p>< br/>
-                                            <p className="games-description">{item.descricao}</p>
-                                        </div>
-                                        <img src={item.foto} />
-                                    </div>
-                                )
-                            })}
-                        </section>
-                </div>
+
 
             </div>
     )
