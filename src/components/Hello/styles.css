@@ -14,6 +14,14 @@ div .header strong {
     background-color: yellow;
 }
 
+div .header h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .20em solid chartreuse; /* The typwriter cursor */
+    animation: 
+      typing 3.2s steps(40, end),
+      cursor-blink .75s step-end infinite;
+}
+
 div .header p {
     margin-top: 3rem;
     font-size: 2rem;
@@ -34,4 +42,16 @@ div .header svg:hover {
     cursor: pointer;
     opacity: 0.8;
     color: yellow;
+}
+
+
+/* =================ANIMAÇÔES================= */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 81%; }
+}
+
+@keyframes cursor-blink {
+    from, to { border-color: transparent; }
+    50% { border-color: whitesmoke; }
 }
