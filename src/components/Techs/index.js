@@ -7,20 +7,20 @@ export default function Techs() {
         <div className="tecnologias">
             <h3>Tecnologias que já trabalhei</h3>
                 <div className="techs">
-                    <i class="devicon-cplusplus-plain"></i>
-                    <i class="devicon-java-plain"></i>
-                    <i class="devicon-javascript-plain"></i>
-                    <i class="devicon-python-plain"></i>
-                    <i class="devicon-git-plain"></i>
+                    <i className="devicon-cplusplus-plain"></i>
+                    <i className="devicon-java-plain"></i>
+                    <i className="devicon-javascript-plain"></i>
+                    <i className="devicon-python-plain"></i>
+                    <i className="devicon-git-plain"></i>
                 </div>
 
             <h3>Tecnologias que estou estudando</h3>
                 <div className="techs">
-                    <i class="devicon-nodejs-plain"></i>
-                    <i class="devicon-express-original"></i>
-                    <i class="devicon-html5-plain"></i>
-                    <i class="devicon-css3-plain"></i>
-                    <i class="devicon-react-original"></i>
+                    <i className="devicon-nodejs-plain"></i>
+                    <i className="devicon-express-original"></i>
+                    <i className="devicon-html5-plain"></i>
+                    <i className="devicon-css3-plain"></i>
+                    <i className="devicon-react-original"></i>
                 </div>
         </div>
     );

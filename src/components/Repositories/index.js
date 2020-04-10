@@ -12,9 +12,14 @@ export default function Repositories( {repositorios} ) {
                 <section>
                     { repositorios.map((value, id) => {
                         return(
-                            <div className="repositorios-item" key={id} onClick={() => {Redireciona(value.html_url)}} >
+                            <div className="repositorios-item" 
+                                 key={id}  
+                                 onClick={() => {Redireciona(value.html_url)}}
+                                >
                                 <p className="repositorios-name">{value.name}</p>
-                                <p className="repositorios-description">{value.description === null ? "Estou sem descição :(" : value.description}</p>
+                                <p className="repositorios-description">
+                                    {value.description === null ? "Estou sem descição :(" : value.description}
+                                </p>
                                 <p className="repositorios-techs">{value.language === null ? "Multiplas" : value.language}</p>
                             </div>
                         )
