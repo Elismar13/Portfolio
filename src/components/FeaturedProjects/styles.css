@@ -34,3 +34,12 @@
 }
 
 
+@media screen and (max-width: 1000px) {
+    div .projects {
+        height: max-content + 5vh;
+    }
+
+    div .projects section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
