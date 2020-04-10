@@ -34,3 +34,8 @@ h3 {
     }
 }
 
+@media screen and (max-width:540px) {
+    h3 {
+        font-size: 3rem;
+    }
+}

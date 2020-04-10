@@ -46,3 +46,11 @@ div .games section img {
     height: 17rem;
     border-radius: 30px;
 }
+
+@media screen and (max-width:700px) {
+    div .games section div.games-box {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 10vh;
+    }
+}
