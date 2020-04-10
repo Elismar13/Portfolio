@@ -32,3 +32,14 @@ div .description .description-text {
     text-align: justify;
     width: 50vw;
 }
+
+@media screen and (max-width:1000px) {
+    div .description {
+        height: max-content;
+        flex-direction: column;
+    }
+    div .description .description-text {
+        margin-top: 3vh;
+        width: 90%;
+    }
+}

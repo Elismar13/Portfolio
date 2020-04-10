@@ -1,0 +1,36 @@
+.projects {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects h3 {
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+.projects section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 45px;
+    column-gap: 30px;
+}
+
+.projects section .projects-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.projects section .projects-info img {
+    width: 7rem;
+    height: 7rem;
+}
+
+.projects section .projects-info p {
+    font-size: 1.2rem;
+}
+
+

@@ -5,10 +5,10 @@ import './styles.css';
 
 import api from '../../api/githubProfile';
 
-import projects from '../../api/projects'
 
 import Hello from '../../components/Hello';
 import Description from '../../components/Description';
+import FeaturedProjects from '../../components/FeaturedProjects';
 import Techs from '../../components/Techs';
 import Repositories from '../../components/Repositories';
 import Games from '../../components/Games';
@@ -43,19 +43,7 @@ const Home = () => {
                 
                 <Description user={user} />
 
-                <div className="projects">
-                    <h3>Minhas contribuições</h3>
-                        <section>
-                            { projects.map((value, id) => {
-                                return(
-                                    <div className="projects-info" key={id}>
-                                        <img src={value.logo}/>
-                                        <p className="projects-description">{value.description === null ? "Estou sem descição :(" : value.description}</p>
-                                    </div>
-                                )
-                            })}
-                        </section>
-                </div>
+                <FeaturedProjects />
 
                 <Techs />
 
