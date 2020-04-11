@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 
 import './styles.css';
 
@@ -6,11 +6,24 @@ import './styles.css';
 export default function Repositories( {repositorios} ) {
     const Redireciona = (url) => window.open(url);
 
+    const [repos, setRepo] = useState([]);
+    const [reponumber, setNumber] = useState(0);
+
+    useEffect(() => {
+        function setRepoData() {
+            setRepo(repositorios.slice(0, 5*reponumber));
+            console.log(reponumber)
+        }
+
+        setRepoData();
+    }, [reponumber]);
+
+
     return (
         <div className="repositorios">
             <h3>Minhas contribuições</h3>
                 <section>
-                    { repositorios.map((value, id) => {
+                    { repos.map((value, id) => {
                         return(
                             <div className="repositorios-item" 
                                  key={id}  
@@ -25,6 +38,12 @@ export default function Repositories( {repositorios} ) {
                         )
                     })}
                 </section>
+                <button 
+                    className="mostrarmais"
+                    onClick={() => setNumber(reponumber + 1)}
+                    >
+                    Mostrar mais
+                </button>
         </div>
         // <div>
         //     {console.log(repositorios)}
