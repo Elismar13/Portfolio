@@ -7,12 +7,18 @@ export default function Repositories( {repositorios} ) {
     const Redireciona = (url) => window.open(url);
 
     const [reponumber, setNumber] = useState(1);
+    const [textButton, setText] = useState("Mostrar mais");
+
+    useEffect(() => {
+        setText( 5*reponumber <= repositorios.length ? "Mostrar mais" : "Mostrar menos");
+    }, [reponumber])
 
     return (
         <div className="repositorios">
             <h3>Minhas contribuições</h3>
                 <section>
                     { repositorios
+                        // eslint-disable-next-line react/prop-types
                         .slice(0, 5*reponumber)
                         .map((value, id) => {
                             return(
@@ -31,10 +37,12 @@ export default function Repositories( {repositorios} ) {
                     }
                 </section>
                 <button 
-                    className="mostrarmais"
-                    onClick={() => setNumber(reponumber + 1)}
+                    className="mostrar-mais"
+                    onClick={() => {
+                        5*reponumber <= repositorios.length ? setNumber(reponumber + 1) : setNumber(1);
+                    }}
                     >
-                    Mostrar mais
+                    {textButton}
                 </button>
         </div>
         // <div>

@@ -49,6 +49,14 @@ div .repositorios section .repositorios-item p.repositorios-description {
     margin-bottom: 3vh;
 }
 
+div .repositorios button.mostrar-mais {
+    height: 40px;
+    margin-top: 10vh;
+    width: 50vh;
+    border: solid 1px;
+    border-radius: 6px;
+}
+
 @media screen and (max-width: 1000px) {
     div .repositorios section {
         grid-template-columns: repeat(2, 1fr);
