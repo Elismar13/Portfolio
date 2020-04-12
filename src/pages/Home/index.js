@@ -39,17 +39,20 @@ const Home = () => {
 
     return (
             <div className="container">
-                <Hello />
-                
-                <Description user={user} />
+                <section>
+                    <Hello />
+                    
+                    <Description user={user} />
 
-                <FeaturedProjects />
+                    <FeaturedProjects />
 
-                <Techs />
+                    <Techs />
 
-                <Repositories repositorios={repositorios} />
+                    <Repositories repositorios={repositorios} />
 
-                <Games />
+                    <Games />
+                </section>
+
             </div>
     )
 };

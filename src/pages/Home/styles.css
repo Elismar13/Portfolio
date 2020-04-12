@@ -1,0 +1,10 @@
+div .container {
+    height: max-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    max-width: 1300px;
+}

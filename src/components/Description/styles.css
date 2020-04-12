@@ -2,7 +2,6 @@
 div .description {
     display: flex;
     height: 60vh;
-    background-color: aqua;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -14,8 +13,8 @@ div .description .description-image {
 }
 
 div .description .description-image img {
-    width: 40vh;
-    height: 40vh;
+    width: 35vh;
+    height: 35vh;
     border: solid 10px;
     border-color: #cb0c59;
     border-radius: 25vh;
@@ -23,7 +22,7 @@ div .description .description-image img {
 
 div .description .description-image p {
     margin-top: 3vh;
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
 }
 
@@ -41,5 +40,13 @@ div .description .description-text {
     div .description .description-text {
         margin-top: 3vh;
         width: 90%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    div .description {
+        height: max-content;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
     }
 }
