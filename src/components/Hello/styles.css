@@ -19,7 +19,7 @@ div .header h1 {
     white-space: nowrap;
     border-right: .20em solid chartreuse; /* The typwriter cursor */
     animation: 
-      typing 3.5s steps(40, end),
+      typing 3s steps(40, end),
       cursor-blink .75s step-end infinite;
 }
 
@@ -49,7 +49,7 @@ div .header svg:hover {
 /* =================ANIMAÇÔES================= */
 @keyframes typing {
     from { width: 0; }
-    to { width: 81%; }
+    to { width: 60%; }
 }
 
 @keyframes cursor-blink {

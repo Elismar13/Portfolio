@@ -11,7 +11,7 @@ import './styles.css';
 export default function Hello() {
     return (
         <div className="header">
-            <h1>Olá, Me chamo <strong>Elismar</strong>!</h1>
+                <h1>Olá, Me chamo <strong>Elismar</strong>!</h1>
             <p>Estudante de engenharia de computação e fascinado por projetos open-source.</p>
             <div className="links">
                 <a href="https://github.com/Elismar13"> 
