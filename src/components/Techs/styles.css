@@ -4,17 +4,13 @@ div .tecnologias {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 10vh;
 }
 
 div .techs {
-    margin-top: 3vh;
-    margin-bottom: 3vh;
     display: flex;
     width: 40%;
     justify-content: space-between;
-}
-div .tecnologias h3 {
-    margin-top: 5vh;
 }
 
 div .techs i {
@@ -24,5 +20,14 @@ div .techs i {
 @media screen and (max-width: 480px) {
     div .techs i {
         font-size: 3rem;
+    }
+    div .tecnologias {
+        height: max-content;
+        margin-top: 5vh;
+        margin-bottom: 0vh;
+    }
+
+    div .tecnologias h3 {
+        margin-top: 8vh;
     }
 }

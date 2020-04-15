@@ -5,6 +5,7 @@ div .repositorios {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 10vh;
 }
 
 div .repositorios h3 {
@@ -66,5 +67,8 @@ div .repositorios button.mostrar-mais {
 @media screen and (max-width: 700px) {
     div .repositorios section {
         grid-template-columns: repeat(1, 1fr);
+    }
+    div .repositorios {
+        margin-top: 0;
     }
 }

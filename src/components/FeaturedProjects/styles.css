@@ -4,11 +4,6 @@
     flex-direction: column;
 }
 
-.projects h3 {
-    margin-top: 10vh;
-    margin-bottom: 5vh;
-}
-
 .projects section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
