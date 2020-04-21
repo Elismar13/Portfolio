@@ -5,6 +5,8 @@ div .description {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    margin-top: 3vh;
+
 }
 
 div .description .description-image {
@@ -21,7 +23,6 @@ div .description .description-image img {
 }
 
 div .description .description-image p {
-    margin-top: 3vh;
     font-size: 1.8rem;
     text-align: center;
 }

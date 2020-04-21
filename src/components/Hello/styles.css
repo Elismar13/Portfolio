@@ -46,6 +46,16 @@ div .header svg:hover {
     color: var(--iconshouve-color);
 }
 
+div .scroll-button {
+    position: absolute;
+    bottom: 0;
+    animation: button-scroll 0.75s infinite;
+}
+
+div .scroll-button button{
+    background-color: transparent;
+    border: none;
+}
 
 /* =================ANIMAÇÔES================= */
 @keyframes typing {
@@ -58,6 +68,10 @@ div .header svg:hover {
     50% { border-color: whitesmoke; }
 }
 
+@keyframes button-scroll {
+    from { transform: translateY(0); }
+    to { transform: translateY(-2vh); }
+}
 
 /* =================RESPONSIVIDADE================= */
 @media screen and (max-width:1100px) {

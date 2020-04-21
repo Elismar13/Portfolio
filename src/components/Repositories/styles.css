@@ -60,11 +60,16 @@ div .repositorios button.mostrar-mais {
     height: 40px;
     margin-top: 10vh;
     width: 40vh;
-    background-color: transparent;
     border: solid 1px;
     border-color: red;
     border-radius: 6px;
-    animation: forwards steps(0, 40) 1s infinite;
+    animation: fade 2s infinite;
+}
+
+@keyframes fade {
+    from { background-color: var(--text-color); }
+    50% { background-color: green; }
+    to { background-color: var(--text-color); }
 }
 
 
