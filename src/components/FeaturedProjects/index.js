@@ -7,7 +7,7 @@ import projects from '../../api/projects'
 export default function FeaturedProjects() {
     return (
         <div className="projects">
-            <h3>Minhas contribuições</h3>
+            <h3>Projetos principais</h3>
                 <section>
                     { projects.map((value, id) => {
                         return(
