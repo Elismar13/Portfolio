@@ -31,12 +31,17 @@ div .repositorios section .repositorios-item {
     border-radius: 25px;
     padding: 0 20px 0 20px;
     background-color: aquamarine;
+    color: var(--cardtext-color);
 }
 
 div .repositorios section .repositorios-item:hover {
     opacity: 0.8;
     cursor: pointer;
     background-color: rgb(255, 255, 255);
+}
+
+div .repositorios section .repositorios-item p {
+    color: var(--cardtext-color);
 }
 
 div .repositorios section .repositorios-item p.repositorios-name {

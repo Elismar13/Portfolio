@@ -15,6 +15,7 @@ div .header strong {
 }
 
 div .header h1 {
+    color: var(--title-color);
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     white-space: nowrap;
     border-right: .20em solid chartreuse; /* The typwriter cursor */
@@ -35,14 +36,14 @@ div .header .links {
 
 div .header a {
     text-decoration: none;
-    color: aliceblue;
+    color: var(--icons-color);
     margin-right: 3vw;
 }
 
 div .header svg:hover {
     cursor: pointer;
     opacity: 0.8;
-    color: yellow;
+    color: var(--iconshouve-color);
 }
 
 

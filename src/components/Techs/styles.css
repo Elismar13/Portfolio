@@ -15,6 +15,7 @@ div .techs {
 
 div .techs i {
     font-size: 4rem;
+    color: var(--icons-color);
 }
 
 @media screen and (max-width: 480px) {

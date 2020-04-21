@@ -8,3 +8,8 @@ div .container {
 section {
     max-width: 1300px;
 }
+
+p {
+    color: var(--text-color);
+}
+
