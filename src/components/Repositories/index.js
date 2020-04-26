@@ -3,14 +3,15 @@ import React, {useState, useEffect} from 'react';
 import './styles.css';
 
 // eslint-disable-next-line react/prop-types
-export default function Repositories( {repositorios} ) {
+export default function Repositories( {repositorios = null} ) {
     const Redireciona = (url) => window.open(url);
 
     const [reponumber, setNumber] = useState(1);
     const [textButton, setText] = useState("Mostrar mais");
 
     useEffect(() => {
-        setText( 5*reponumber <= repositorios.length ? "Mostrar mais" : "Mostrar menos");
+        if(repositorios.length != 0)
+            setText( 5*reponumber <= repositorios.length ? "Mostrar mais" : "Mostrar menos");
     }, [reponumber])
 
     return (

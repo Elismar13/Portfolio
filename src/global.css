@@ -8,10 +8,11 @@
 :root {
     --bg-color: #222222;
     --text-color: #FFF;
-    --title-color: #ecb045;
+    --title-color: #ff5733;
     --icons-color: #FFFFe0;
     --iconshouve-color: #ff5733;
     --cardtext-color: #000;
+    --repositories-color: aquamarine;
 }
 
 html, body {

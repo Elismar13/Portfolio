@@ -30,7 +30,7 @@ div .repositorios section .repositorios-item {
     text-align: center;
     border-radius: 25px;
     padding: 0 20px 0 20px;
-    background-color: aquamarine;
+    background-color: var(--repositories-color);
     color: var(--cardtext-color);
 }
 
@@ -59,17 +59,13 @@ div .repositorios button.mostrar-mais {
     font-size: 20px;
     height: 40px;
     margin-top: 10vh;
-    width: 40vh;
-    border: solid 1px;
-    border-color: red;
-    border-radius: 6px;
-    animation: fade 2s infinite;
+    width: 30vh;
+    color: var(--text-color);
+    background-color: rgb(245, 62, 38);
 }
 
-@keyframes fade {
-    from { background-color: var(--text-color); }
-    50% { background-color: green; }
-    to { background-color: var(--text-color); }
+div .repositorios button.mostrar-mais:hover {
+    opacity: 0.5;
 }
 
 
