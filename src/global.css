@@ -8,7 +8,7 @@
 :root {
     --bg-color: #222222;
     --text-color: #FFF;
-    --title-color: #ff5733;
+    --title-color: #ecb045;
     --icons-color: #FFFFe0;
     --iconshouve-color: #ff5733;
     --cardtext-color: #000;
@@ -17,8 +17,12 @@
 html, body {
     height: 100%;
     width: 100%;
-    /*//background-image: linear-gradient(to left, #194e7c,#00ccfd); */
-    background-color: var(--bg-color);
+    /*
+    background-image: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background-image: linear-gradient(to right, #ecb045, #fd1d1d, #833ab4);
+    */
+    background: var(--bg-color);
+
     font-size: 16px;
 }
 
