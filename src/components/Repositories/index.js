@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react';
 import './styles.css';
 
 // eslint-disable-next-line react/prop-types
-export default function Repositories( {repositorios = null} ) {
+export default function Repositories( {repositorios = []} ) {
     const Redireciona = (url) => window.open(url);
 
     const [reponumber, setNumber] = useState(1);
