@@ -1,12 +1,10 @@
-
 div .description {
     display: flex;
     height: 60vh;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    margin-top: 3vh;
-
+    margin-top: max(5vh, 50px);
 }
 
 div .description .description-image {
@@ -48,7 +46,5 @@ div .description .description-text {
 @media screen and (max-width:700px) {
     div .description {
         height: max-content;
-        padding-top: 5vh;
-        padding-bottom: 5vh;
     }
 }

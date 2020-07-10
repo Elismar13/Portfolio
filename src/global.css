@@ -8,8 +8,8 @@
 :root {
     --bg-color: #222222;
     --text-color: #FFF;
-    --title-color: #ff5733;
-    --icons-color: #FFFFe0;
+    --title-color: #ff0000;
+    --icons-color: #838374;
     --iconshouve-color: #ff5733;
     --cardtext-color: #000;
     --repositories-color: aquamarine;
@@ -38,8 +38,7 @@ h3 {
     font-weight: bold;
     color: var(--title-color);
     font-size: 4rem;
-    margin-top: 10vh;
-    margin-bottom: 5vh;
+    margin-bottom: max(5vh, 50px);
 }
 
 /* =================RESPONSIVIDADE================= */
@@ -63,7 +62,5 @@ h3 {
 @media screen and (max-width: 480px) {
     h3 {
         font-size: 2.5rem;
-        margin-top: 10vh;
-        margin-bottom: 5vh;
     }
 }

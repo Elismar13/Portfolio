@@ -1,17 +1,22 @@
-.projects {
+div.projects {
     height: max-content;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: max(5vh, 50px);
+    margin-bottom: max(5vh, 50px);
 }
 
-.projects section {
+div.projects section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 45px;
     column-gap: 30px;
+    width: 90%;
 }
 
-.projects section .projects-info {
+div.projects section .projects-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,28 +24,20 @@
     text-align: center;
 }
 
-.projects section .projects-info img {
+div.projects section .projects-info img {
     width: 7rem;
     height: 7rem;
 }
 
-.projects section .projects-info p {
+div.projects section .projects-info p {
     font-size: 1.2rem;
 }
 
 
 @media screen and (max-width: 1000px) {
-    div .projects section {
-        grid-template-columns: repeat(2, 1fr);
-    }
+
 }
 
 @media screen and (max-width: 700px) {
-    div .projects {
-        height: max-content;
-    }
 
-    div .projects section {
-        grid-template-columns: repeat(1, 1fr);
-    }
 }
