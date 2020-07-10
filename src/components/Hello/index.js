@@ -12,8 +12,9 @@ import './styles.css';
 export default function Hello() {
     const [size, setSize] = useState(60);
 
-    function scroll(taxe) {
-        const heigth = window.screen.height;
+    function scroll() {
+        const heigth = window.screen.availHeight;
+        console.log(heigth)
         window.scrollTo(0, heigth);
     }
 

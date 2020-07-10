@@ -32,8 +32,6 @@ const Home = () => {
         getUser();
         getRepositorios();
 
-
-        
      }, [] )
 
 
@@ -41,15 +39,10 @@ const Home = () => {
             <div className="container">
                 <section>
                     <Hello />
-                    
                     <Description user={user} />
-
                     <FeaturedProjects />
-
                     <Techs />
-
                     <Repositories repositorios={repositorios} />
-
                     <Games />
                 </section>
 
