@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useReducer} from 'react';
+import React, {useState, useEffect} from 'react';
 
 import './styles.css';
 
@@ -7,7 +7,7 @@ export default function Repositories( {repositorios = []} ) {
     const Redireciona = (url) => window.open(url);
 
     const [reponumber, setNumber] = useState(1);
-    const [textButton, setText] = useReducer("Mostrar mais");
+    const [textButton, setText] = useState("Mostrar mais");
 
     useEffect(() => {
         if(repositorios.length !== 0)
