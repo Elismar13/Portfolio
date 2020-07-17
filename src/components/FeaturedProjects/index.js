@@ -12,7 +12,7 @@ export default function FeaturedProjects() {
                     { projects.map((value, id) => {
                         return(
                             <div className="projects-info" key={id}>
-                                <img src={value.logo}/>
+                                <img src={value.logo} alt={value.title}/>
                                 <p className="projects-description">{value.description === null ? "Estou sem descição :(" : value.description}</p>
                             </div>
                         )

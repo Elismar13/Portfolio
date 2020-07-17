@@ -16,7 +16,7 @@ export default function Games() {
                                     <p className="games-title">{jogo.nome}</p>< br/>
                                     <p className="games-description">{jogo.descricao}</p>
                                 </div>
-                                <img src={jogo.foto} />
+                                <img src={jogo.foto} alt={jogo.nome}/>
                             </div>
                         )
                     })}

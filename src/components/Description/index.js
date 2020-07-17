@@ -7,7 +7,7 @@ export default function Description({ user = {} }) {
     return (
         <div className="description">
             <div className="description-image">
-                <img src={user.avatar_url} className="MinhaImagem" />
+                <img src={user.avatar_url} className="MinhaImagem" alt="Avatar" />
                 <p> {user.login} </p>
             </div>
             <div className="description-text">
