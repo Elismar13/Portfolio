@@ -36,17 +36,16 @@ const Home = () => {
 
 
     return (
-            <div className="container">
-                <section>
-                    <Hello />
-                    <Description user={user} />
-                    <FeaturedProjects />
-                    <Techs />
-                    <Repositories repositorios={repositorios} />
-                    <Games />
-                </section>
-
-            </div>
+        <div className="container">
+            <section>
+                <Hello />
+                <Description user={user} />
+                <FeaturedProjects />
+                <Techs />
+                <Repositories repositorios={repositorios} />
+                <Games />
+            </section>
+        </div>
     )
 };
 
