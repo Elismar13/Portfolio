@@ -4,10 +4,12 @@ import { FaInstagram,
          FaFacebook, 
          FaTwitter, 
          FaGithub,
+         FaTwitch,
          FaAngleDoubleDown } from 'react-icons/fa';
 
 import './styles.css';
 
+import socialLinks from '../../data/socialLinks';
 
 export default function Hello() {
     const [size, setSize] = useState(60);
@@ -28,20 +30,41 @@ export default function Hello() {
                 <h1>Olá, Me chamo <strong>Elismar</strong>!</h1>
             <p>Estudante de engenharia de computação e fascinado por projetos open-source.</p>
             <div className="links">
-                <a href="https://github.com/Elismar13"> 
-                    <FaGithub    size={size}   title="GitHub"/> 
+                <a href={socialLinks.Git.link}> 
+                    <FaGithub    
+                        size={size}   
+                        title={socialLinks.Git.title}
+                    /> 
                 </a>
-                <a> 
-                    <FaLinkedin  size={size}   title="Linkedin"/> 
+                <a href={socialLinks.Linkedin.link}> 
+                    <FaLinkedin  
+                        size={size}   
+                        title={socialLinks.Linkedin.title}
+                    /> 
                 </a>
-                <a> 
-                    <FaTwitter   size={size}   title="Twitter"/> 
+                <a href={socialLinks.Twitter.link}> 
+                    <FaTwitter   
+                        size={size}   
+                        title={socialLinks.Twitter.title}
+                    /> 
                 </a>
-                <a> 
-                    <FaInstagram size={size}   title="Instagram"/> 
+                <a href={socialLinks.Instagram.link}> 
+                    <FaInstagram 
+                        size={size}
+                        title={socialLinks.Instagram.title}
+                    /> 
                 </a>
-                <a> 
-                    <FaFacebook  size={size}   title="Facebook" />  
+                <a href={socialLinks.Facebook.link}> 
+                    <FaFacebook  
+                        size={size}   
+                        title={socialLinks.Facebook.title}
+                    />  
+                </a> 
+                <a href={socialLinks.Twitch.link}> 
+                    <FaTwitch  
+                        size={size}   
+                        title={socialLinks.Twitch.title}
+                    />  
                 </a> 
             </div>
             <div className="scroll-button">

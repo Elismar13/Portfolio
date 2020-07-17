@@ -10,7 +10,7 @@ export default function Repositories( {repositorios = []} ) {
     const [textButton, setText] = useState("Mostrar mais");
 
     useEffect(() => {
-        if(repositorios.length != 0)
+        if(repositorios.length !== 0)
             setText( 5*reponumber <= repositorios.length ? "Mostrar mais" : "Mostrar menos");
     }, [reponumber])
 
