@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 import './styles.css';
 
-import api from '../../api/githubProfile';
+import api from '../../data/githubProfile';
 
 
 import Hello from '../../components/Hello';

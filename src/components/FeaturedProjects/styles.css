@@ -25,8 +25,8 @@ div.projects section .projects-info {
 }
 
 div.projects section .projects-info img {
-    width: 7rem;
-    height: 7rem;
+    width: 100px;
+    height: 100px;
 }
 
 div.projects section .projects-info p {

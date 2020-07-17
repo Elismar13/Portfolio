@@ -14,7 +14,6 @@ export default function Hello() {
 
     function scroll() {
         const heigth = window.screen.availHeight;
-        console.log(heigth)
         window.scrollTo(0, heigth);
     }
 
@@ -30,11 +29,20 @@ export default function Hello() {
             <p>Estudante de engenharia de computação e fascinado por projetos open-source.</p>
             <div className="links">
                 <a href="https://github.com/Elismar13"> 
-                    <FaGithub    size={size}   title="GitHub"/> </a>
-                <a> <FaLinkedin  size={size}   title="Linkedin"/> </a>
-                <a> <FaTwitter   size={size}   title="Twitter"/> </a>
-                <a> <FaInstagram size={size}   title="Instagram"/> </a>
-                <a> <FaFacebook  size={size}   title="Facebook" />  </a> 
+                    <FaGithub    size={size}   title="GitHub"/> 
+                </a>
+                <a> 
+                    <FaLinkedin  size={size}   title="Linkedin"/> 
+                </a>
+                <a> 
+                    <FaTwitter   size={size}   title="Twitter"/> 
+                </a>
+                <a> 
+                    <FaInstagram size={size}   title="Instagram"/> 
+                </a>
+                <a> 
+                    <FaFacebook  size={size}   title="Facebook" />  
+                </a> 
             </div>
             <div className="scroll-button">
                 <button onClick={() => scroll(5)}>

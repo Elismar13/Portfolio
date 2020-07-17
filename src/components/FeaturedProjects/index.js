@@ -2,7 +2,7 @@ import React from 'react';
 
 import './styles.css';
 
-import projects from '../../api/projects'
+import projects from '../../data/projects'
 
 export default function FeaturedProjects() {
     return (
