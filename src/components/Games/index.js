@@ -8,7 +8,7 @@ export default function Games() {
     return (
         <div className="games">
             <h3>Meus jogos favoritos</h3>
-                <section>
+                <section className="games-section">
                     { jogos.map((jogo, id) => {
                         return(
                             <div className="games-box"key={id}>

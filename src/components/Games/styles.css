@@ -31,6 +31,7 @@ div .games h3 {
 div.games-text {
     width: 40%;
 }
+
 div .games section  div.games-box  div.games-text p.games-title {
     font-size: 2rem;
 }
@@ -41,9 +42,9 @@ div .games section  div.games-box  div.games-text p.games-description {
 
 div .games section img {
     margin-top: 2vh;
-    width: 25rem;
-    height: 17rem;
-    border-radius: 30px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
 }
 
 @media screen and (max-width:700px) {

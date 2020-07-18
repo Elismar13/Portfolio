@@ -12,7 +12,7 @@ import './styles.css';
 import socialLinks from '../../data/socialLinks';
 
 export default function Hello() {
-    const [size, setSize] = useState(60);
+    const [size, setSize] = useState(50);
 
     function scroll() {
         const heigth = window.screen.availHeight;
@@ -23,7 +23,10 @@ export default function Hello() {
         if(window.screen.width < 700) {
             setSize(40);
         }
-    });
+        if(window.screen.width < 400) {
+            setSize(20);
+        }
+    }, []);
 
     return (
         <div className="header">

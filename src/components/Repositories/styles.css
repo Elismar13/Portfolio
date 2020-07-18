@@ -55,7 +55,8 @@ div .repositorios button.mostrar-mais {
     margin-top: 10vh;
     width: 30vh;
     color: var(--text-color);
-    background-color: rgb(245, 62, 38);
+    background-color: rgb(119, 0, 255);
+    border-radius: 10px;
 }
 
 div .repositorios button.mostrar-mais:hover {
