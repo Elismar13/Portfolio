@@ -1,13 +1,9 @@
 import React from 'react';
-
 import Routes from './routes';
-
 import './global.css';
 
 const App = () => (
-    <>
-        <Routes />
-    </>
+    <Routes />
 );
 
 export default App;
