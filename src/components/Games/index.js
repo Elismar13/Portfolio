@@ -12,11 +12,11 @@ export default function Games() {
                     { jogos.map((jogo, id) => {
                         return(
                             <div className="games-box"key={id}>
+                                <img src={jogo.foto} alt={jogo.nome}/>
                                 <div className="games-text">
                                     <p className="games-title">{jogo.nome}</p>< br/>
                                     <p className="games-description">{jogo.descricao}</p>
                                 </div>
-                                <img src={jogo.foto} alt={jogo.nome}/>
                             </div>
                         )
                     })}
