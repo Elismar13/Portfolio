@@ -15,29 +15,38 @@ div .games section {
 }
 
 div .games section div.games-box {
+    background-color: var(--card-box-color);
+    border-radius: 30px;
+    padding: 40px 40px 40px 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    transition: 0.2s;
 }
 
+div .games section div.games-box:hover {
+    transform: scale(1.05, 1.05);
+    box-shadow: yellow;
+}
 
 div .games h3 {
     margin-top: 10vh;
     margin-bottom: 5vh;
 }
 
-div.games-text {
-    
+div.games-text p {
+    color: var(--cardtext-color);
+    margin-top: 20px;
 }
 
-div .games section  div.games-box  div.games-text p.games-title {
+div.games section  div.games-box  div.games-text p.games-title {
     font-size: 2rem;
 }
 
-div .games section  div.games-box  div.games-text p.games-description {
-    font-size: 1rem;
+div.games section  div.games-box  div.games-text p.games-description {
+    font-size: 1.3rem;
 }
 
 div .games section img {
@@ -48,9 +57,7 @@ div .games section img {
 }
 
 @media screen and (max-width:700px) {
-    div .games section div.games-box {
-        width: 100%;
-        flex-direction: column;
-        margin-bottom: 10vh;
+    div .games section {
+        grid-template-columns: 1fr;
     }
 }

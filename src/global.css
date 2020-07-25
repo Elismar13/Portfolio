@@ -11,7 +11,8 @@
     --title-color: #ff0000;
     --icons-color: #ffe600;
     --iconshouve-color: #ff5733;
-    --cardtext-color: #000;
+    --card-box-color: #ececec;
+    --cardtext-color: rgb(83, 83, 83);
     --repositories-color: aquamarine;
 }
 
