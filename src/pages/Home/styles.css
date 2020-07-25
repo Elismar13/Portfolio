@@ -246,6 +246,21 @@ i {
     } 
 }
 
+/* ================================= RESPONSIVIDADE ================================= */
+@media (max-width: 1000px) {
+
+    p, spam, h1, h3 {
+        font-size: 80%;
+    }
+    .Repositorios {
+        grid-template-columns: 1fr 1fr;
+    }
+    .Jogos .CardJogo img {
+        width: 250px;
+        height: 300;
+    }
+}
+  
 @media (max-width: 700px) {
     .Jogos .CardJogo {
         width: 90%;
@@ -255,5 +270,5 @@ i {
     }
     .Jogos .CardJogo .TituloJogo {
         font-size: 1.7rem;
-    }
+  }
 }
