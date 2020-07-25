@@ -26,12 +26,14 @@ div .repositorios section .repositorios-item {
     padding: 0 20px 0 20px;
     background-color: var(--repositories-color);
     color: var(--cardtext-color);
+    transition: 0.5s;
 }
 
 div .repositorios section .repositorios-item:hover {
     opacity: 0.8;
     cursor: pointer;
     background-color: rgb(255, 255, 255);
+    transform: scale(1.05, 1.05);
 }
 
 div .repositorios section .repositorios-item p {
