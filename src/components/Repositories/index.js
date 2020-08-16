@@ -1,9 +1,15 @@
 import React, {useState, useEffect} from 'react';
+import Axios from 'axios';
 
 import './styles.css';
 
 // eslint-disable-next-line react/prop-types
 export default function Repositories( {repositorios = []} ) {
+    const parseLanguages = async (languages_url) => {
+        const response = await Axios.get(languages_url);
+        console.log(response.data)
+    }
+
     const Redireciona = (url) => window.open(url);
 
     const [reponumber, setNumber] = useState(1);
@@ -18,6 +24,7 @@ export default function Repositories( {repositorios = []} ) {
         <div className="repositorios">
             <h3>Minhas contribuições</h3>
                 <section>
+                    {console.log(repositorios)}
                     { repositorios
                         // eslint-disable-next-line react/prop-types
                         .slice(0, 5*reponumber)
@@ -26,7 +33,7 @@ export default function Repositories( {repositorios = []} ) {
                                 <div className="repositorios-item" 
                                     key={id}  
                                     onClick={() => Redireciona(value.html_url)}
-                                    >
+                                >
                                     <p className="repositorios-name">{value.name}</p>
                                     <p className="repositorios-description">
                                         {value.description === null ? "Estou sem descição :(" : value.description}

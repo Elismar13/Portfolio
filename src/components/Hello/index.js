@@ -12,7 +12,7 @@ import './styles.css';
 import socialLinks from '../../data/socialLinks';
 
 export default function Hello() {
-    const [size, setSize] = useState(50);
+    const [size, setSize] = useState(40);
 
     function scroll() {
         const heigth = window.screen.availHeight;
@@ -20,17 +20,21 @@ export default function Hello() {
     }
 
     useEffect(() => {
-        if(window.screen.width < 700) {
-            setSize(40);
-        }
-        if(window.screen.width < 400) {
-            setSize(20);
-        }
+        const reziseEvent = window.addEventListener('resize', function(e) {
+            if(window.screen.width < 700) {
+                setSize(40);
+            }
+            if(window.screen.width < 400) {
+                setSize(25);
+            }
+            console.log(window.screen.availWidth);
+        });
+        //window.removeEventListener('resize', reziseEvent);
     }, []);
 
     return (
-        <div className="header">
-                <h1>Olá, Me chamo <strong>Elismar</strong>!</h1>
+        <header className="header">
+            <h1>Olá, Me chamo <strong>Elismar</strong>!</h1>
             <p>Estudante de engenharia de computação e fascinado por projetos open-source.</p>
             <div className="links">
                 <a href={socialLinks.Git.link}> 
@@ -75,6 +79,6 @@ export default function Hello() {
                     <FaAngleDoubleDown size={20} color="#ffffff" />
                 </button>
             </div>
-        </div>
+        </header>
     );
 }

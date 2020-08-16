@@ -1,23 +1,22 @@
-div .header {
+header.header {
     width: 100%;
-    height: 100vh;
+    max-width: 100%;
+    height: max(768px, 100vh);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     font-size: 3rem;
     text-align: center;
     background-image: url('../../assets//Background.png');
     background-position: center;
+    background-attachment: fixed;
     background-size: cover;
 }
 
-div .header strong {
-    background-color: yellow;
-}
-
-div .header h1 {
+header.header h1 {
     color: var(--title-color);
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     white-space: nowrap;
@@ -27,36 +26,40 @@ div .header h1 {
       cursor-blink .75s step-end infinite;
 }
 
-div .header p {
+header.header strong {
+    background-color: yellow;
+}
+
+header.header p {
     margin-top: 3rem;
     font-size: 2rem;
     max-width: 1100px;
     color: #d6cdcd;
 }
 
-div .header .links {
+header.header .links {
     margin-top: 50px;
 }
 
-div .header a {
+header.header a {
     text-decoration: none;
     color: var(--icons-color);
     margin-right: 3vw;
 }
 
-div .header svg:hover {
+header.header svg:hover {
     cursor: pointer;
     opacity: 0.8;
     color: var(--iconshouve-color);
 }
 
-div .scroll-button {
+header .scroll-button {
     position: absolute;
     bottom: 0;
     animation: button-scroll 0.75s infinite;
 }
 
-div .scroll-button button{
+header .scroll-button button{
     background-color: transparent;
     border: none;
 }
@@ -79,13 +82,27 @@ div .scroll-button button{
 
 /* =================RESPONSIVIDADE================= */
 @media screen and (max-width:1100px) {
-    div .header {
+    header.header {
         font-size: 2.7rem;
     }
 }
 
 @media screen and (max-width:700px) {
-    div .header {
+    header.header {
+        font-size: 1.9rem;
+    }
+
+    header.header p {
         font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    header.header {
+        font-size: 1.5rem;
+    }
+
+    header.header p {
+        font-size: 1rem;
     }
 }

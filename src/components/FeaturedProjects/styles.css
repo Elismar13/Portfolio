@@ -39,5 +39,9 @@ div.projects section .projects-info p {
 }
 
 @media screen and (max-width: 700px) {
-
+    div.projects section {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 25px;
+        column-gap: 10px;
+    }
 }
