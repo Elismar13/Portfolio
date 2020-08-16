@@ -5,11 +5,6 @@ import './styles.css';
 
 // eslint-disable-next-line react/prop-types
 export default function Repositories( {repositorios = []} ) {
-    const parseLanguages = async (languages_url) => {
-        const response = await Axios.get(languages_url);
-        console.log(response.data)
-    }
-
     const Redireciona = (url) => window.open(url);
 
     const [reponumber, setNumber] = useState(1);

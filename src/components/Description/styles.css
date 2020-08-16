@@ -15,6 +15,10 @@ div .description .description-image {
 div .description .description-image img {
     width: 35vh;
     height: 35vh;
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 500px;
+    max-height: 500px;
     border: solid 10px;
     border-color: #cb0c59;
     border-radius: 25vh;
