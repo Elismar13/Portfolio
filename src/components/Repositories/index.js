@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import Axios from 'axios';
 
 import './styles.css';
 
@@ -19,7 +18,6 @@ export default function Repositories( {repositorios = []} ) {
         <div className="repositorios">
             <h3>Minhas contribuições</h3>
                 <section>
-                    {console.log(repositorios)}
                     { repositorios
                         // eslint-disable-next-line react/prop-types
                         .slice(0, 5*reponumber)

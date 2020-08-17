@@ -21,7 +21,7 @@ div .description .description-image img {
     max-height: 500px;
     border: solid 10px;
     border-color: #cb0c59;
-    border-radius: 25vh;
+    border-radius: 50%;
 }
 
 div .description .description-image p {

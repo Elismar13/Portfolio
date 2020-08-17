@@ -16,7 +16,7 @@ div .repositorios section {
 }
 
 div .repositorios section .repositorios-item {
-    height: 40vh;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,13 +41,13 @@ div .repositorios section .repositorios-item p {
 }
 
 div .repositorios section .repositorios-item p.repositorios-name {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: bold;
     margin-bottom: 3vh;
 }
 
 div .repositorios section .repositorios-item p.repositorios-description {  
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 3vh;
 }
 
@@ -55,9 +55,9 @@ div .repositorios button.mostrar-mais {
     font-size: 20px;
     height: 40px;
     margin-top: 10vh;
-    width: 30vh;
+    width: 200px;
     color: var(--text-color);
-    background-color: rgb(119, 0, 255);
+    background-color: var(--show-more-button);
     border-radius: 10px;
 }
 
@@ -75,5 +75,12 @@ div .repositorios button.mostrar-mais:hover {
 @media screen and (max-width: 700px) {
     div .repositorios section {
         grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+        width: 90%;
+    }
+
+    div .repositorios section .repositorios-item {
+        overflow: hidden;
+        height: 200px;
     }
 }

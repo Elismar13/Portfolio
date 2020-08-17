@@ -33,11 +33,6 @@ div.projects section .projects-info p {
     font-size: 1.2rem;
 }
 
-
-@media screen and (max-width: 1000px) {
-
-}
-
 @media screen and (max-width: 700px) {
     div.projects section {
         grid-template-columns: repeat(2, 1fr);

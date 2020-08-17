@@ -1,7 +1,7 @@
 header.header {
     width: 100%;
     max-width: 100%;
-    height: max(768px, 100vh);
+    height: max(480px, 100vh);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,6 +39,7 @@ header.header p {
 
 header.header .links {
     margin-top: 50px;
+    max-width: 720px;
 }
 
 header.header a {

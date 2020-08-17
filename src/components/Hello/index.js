@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { FaInstagram, 
          FaLinkedin, 
          FaFacebook, 
@@ -14,25 +14,15 @@ import './styles.css';
 import socialLinks from '../../data/socialLinks';
 
 export default function Hello() {
-    const [size, setSize] = useState(40);
+    const iconSize = 45;
 
     function scroll() {
         const heigth = window.screen.availHeight;
-        window.scrollTo(0, heigth);
-    }
-
-    useEffect(() => {
-        const reziseEvent = window.addEventListener('resize', function(e) {
-            if(window.screen.width < 700) {
-                setSize(40);
-            }
-            if(window.screen.width < 400) {
-                setSize(25);
-            }
-            console.log(window.screen.availWidth);
+        window.scrollTo({
+            top: heigth,
+            behavior: "smooth"
         });
-        //window.removeEventListener('resize', reziseEvent);
-    }, []);
+    }
 
     return (
         <header className="header">
@@ -41,37 +31,37 @@ export default function Hello() {
             <div className="links">
                 <LinkIcon href={socialLinks.Git.link}> 
                     <FaGithub    
-                        size={size}   
+                        size={iconSize}   
                         title={socialLinks.Git.title}
                     /> 
                 </LinkIcon>
                 <LinkIcon href={socialLinks.Linkedin.link} > 
                     <FaLinkedin  
-                        size={size}   
+                        size={iconSize}   
                         title={socialLinks.Linkedin.title}
                     /> 
                 </LinkIcon>
                 <LinkIcon href={socialLinks.Twitter.link}> 
                     <FaTwitter   
-                        size={size}   
+                        size={iconSize}   
                         title={socialLinks.Twitter.title}
                     /> 
                 </LinkIcon>
                 <LinkIcon href={socialLinks.Instagram.link}> 
                     <FaInstagram 
-                        size={size}
+                        size={iconSize}
                         title={socialLinks.Instagram.title}
                     /> 
                 </LinkIcon>
                 <LinkIcon href={socialLinks.Facebook.link}> 
                     <FaFacebook  
-                        size={size}   
+                        size={iconSize}   
                         title={socialLinks.Facebook.title}
                     />  
                 </LinkIcon> 
                 <LinkIcon href={socialLinks.Twitch.link}> 
                     <FaTwitch  
-                        size={size}   
+                        size={iconSize}   
                         title={socialLinks.Twitch.title}
                     />  
                 </LinkIcon> 

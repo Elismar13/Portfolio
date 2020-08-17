@@ -14,6 +14,7 @@
     --card-box-color: #ececec;
     --cardtext-color: rgb(83, 83, 83);
     --repositories-color: aquamarine;
+    --show-more-button: rgb(119, 0, 255);
 }
 
 html, body {
